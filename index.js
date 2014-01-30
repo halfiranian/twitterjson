@@ -14,11 +14,12 @@ var T = new Twit({
 
 
 app.get("/tweets.json", function(req, res) {
+
     T.get('search/tweets', { q: req.query.search, count: 100, result_type: 'popular' }, function(err, reply) {
     // this is important -
     // you must use Response.json()
     if(err){
-        res.send(err);
+        res.send("this really isn't working");
     }
     res.jsonp(reply);
     console.log(req.query.search);
