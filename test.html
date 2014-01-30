@@ -8,21 +8,29 @@
 <body>
 <div id='tweets'></div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
+    var query = getParameterByName('search');
+
     $(document).ready(function(){
 
         $('#tweets').text('asdfasfd');
 
-        $.ajax({
-            url: 'http://twittergp.herokuapp.com/tweets',
-            data: 'search=greenpeace',
-            success: function(data){
-                $('#tweets').text('do something');
-            }
-        });
+        $.getJSON("http://twittergp.herokuapp.com/tweets.json?callback=?", {'search': query}
+        ).done(function(data){
+                    console.log(data);
+                });
+
+
 
     });
+
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+        return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
 </script>
 </body>
 </html>

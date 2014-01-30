@@ -21,7 +21,7 @@ app.get("/tweets.json", function(req, res) {
     if(err){
         res.send(err);
     }
-    res.json(reply);
+    res.jsonp(reply);
     console.log(req.query.search);
     })
 });
