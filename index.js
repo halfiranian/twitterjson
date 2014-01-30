@@ -14,16 +14,21 @@ var T = new Twit({
 
 
 
-app.get("/tweets.json", function(req, res) {
+app.get("/tweets", function(req, res) {
     T.get('search/tweets', { q: req.query.search, count: 100, result_type: 'popular' }, function(err, reply) {
     // this is important -
     // you must use Response.json()
+    if(err){
+        res.send(err);
+    }
     res.json(reply);
     console.log(req.query.search);
     })
 });
 
-
+app.get("/", function(req, res) {
+    res.send('Go to /tweets.json?search=XXX to get the popular tweets on that search in json format. Note you\'re limited to 180 searches every 15 mins')
+});
 
 
 
