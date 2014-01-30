@@ -26,7 +26,16 @@
       <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="20" selection-start="697" selection-end="697" vertical-scroll-proportion="0.40865386" vertical-offset="90" max-vertical-offset="780">
+            <state line="36" column="33" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.86538464" vertical-offset="0" max-vertical-offset="780">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="465">
               <folding />
             </state>
           </provider>
@@ -186,9 +195,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="637">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="20" selection-start="697" selection-end="697" vertical-scroll-proportion="0.40865386" vertical-offset="90" max-vertical-offset="780">
+        <state line="36" column="33" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.86538464" vertical-offset="0" max-vertical-offset="780">
           <folding />
         </state>
       </provider>
