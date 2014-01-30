@@ -1,0 +1,25 @@
+{
+  "name": "tserver",
+  "version": "0.0.0",
+  "description": "basic sample popular tweets",
+  "main": "index.js",
+  "dependencies": {
+    "URIjs": "~1.11.2",
+    "express": "~3.4.8",
+    "twit": "~1.1.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/halfiranian/twitterjson.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/halfiranian/twitterjson/issues"
+  },
+  "homepage": "https://github.com/halfiranian/twitterjson"
+}
