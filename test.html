@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+
+</head>
+<body>
+<div id='tweets'></div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        $('#tweets').text('asdfasfd');
+
+        $.ajax({
+            url: 'http://twittergp.herokuapp.com/tweets',
+            data: 'search=greenpeace',
+            success: function(data){
+                $('#tweets').text('do something');
+            }
+        });
+
+    });
+</script>
+</body>
+</html>
