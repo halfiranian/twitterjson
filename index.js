@@ -33,8 +33,8 @@ app.get("/", function(req, res) {
 
 
 app.enable("jsonp callback");
-app.listen(80);
-console.log("listening on port 80");
+app.listen(process.env.PORT || 3000);
+console.log("listening on port 3000");
 
 
 
