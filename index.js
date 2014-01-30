@@ -1,6 +1,5 @@
 var Twit = require('twit');
 var express = require("express");
-var URI = require('URIjs');
 
 var app = express();
 
@@ -26,21 +25,7 @@ app.get("/tweets.json", function(req, res) {
     })
 });
 
-app.get("/", function(req, res) {
-    res.send('Go to /tweets.json?search=XXX to get the popular tweets on that search in json format. Note you\'re limited to 180 searches every 15 mins')
-});
-
-
-
-app.enable("jsonp callback");
+// app.enable("jsonp callback");
 app.listen(process.env.PORT || 3000);
 console.log("listening on port 3000");
 
-
-
-
-var url = "http://example.org/foo?bar=baz";
-console.log(url);
-
-url = URI(url).query();
-console.log(url);
