@@ -16,17 +16,14 @@ var T = new Twit({
 app.get("/tweets.json", function(req, res) {
 
     T.get('search/tweets', { q: req.query.search, count: 100, result_type: 'popular' }, function(err, reply) {
-    // this is important -
         if(err){
-            throw err;
+            return res.send(500, err.message); // Status code 500 with a message.
         }
-    // you must use Response.json()
     res.jsonp(reply);
-    console.log(req.query.search);
     })
 });
 
-// app.enable("jsonp callback");
 app.listen(process.env.PORT || 3000);
+
 console.log("listening on port 3000");
 
